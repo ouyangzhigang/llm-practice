@@ -1,5 +1,3 @@
-import sys
-
 import streamlit as st
 from pydantic import BaseModel
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
