@@ -5,9 +5,7 @@ from pydantic import BaseModel
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.output_parsers import StrOutputParser
 from langchain.schema import AIMessage, HumanMessage
-
-sys.path.append('../utils')
-from utils.tongyi import tongyi_chat_model
+from tongyi import tongyi_chat_model
 
 st.title('Chat bot demo')
 
@@ -15,6 +13,7 @@ memory_key = 'history'
 
 prompt = ChatPromptTemplate.from_messages(
     [
+        ('system', 'you are a helpful chat bot'),
         MessagesPlaceholder(variable_name=memory_key),
         ('human', '{input}')
     ]
@@ -32,12 +31,12 @@ if "messages" not in st.session_state:
 
 def to_message_place_holder(messages):
     return [
-        AIMessage(content=msg.content) if msg['role'] == 'bot' else HumanMessage(content=msg.content) for
+        AIMessage(content=msg['content']) if msg['role'] == 'bot' else HumanMessage(content=msg['content']) for
         msg in messages
     ]
 
 
-model = tongyi_chat_model()
+model = tongyi_chat_model
 parser = StrOutputParser()
 
 chain = {
