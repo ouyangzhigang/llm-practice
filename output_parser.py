@@ -4,7 +4,7 @@ from langchain_community.llms.tongyi import Tongyi
 
 model = Tongyi(
     model_name='qwen-max',
-    dashscope_api_key='sk-a70f6e7008314650acf4388068e04490',
+    dashscope_api_key='',
     model_kwargs={'temperature': 0.1},
     stream=True
 )

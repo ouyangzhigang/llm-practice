@@ -5,7 +5,7 @@ from langchain_core.pydantic_v1 import BaseModel, Field, validator
 from langchain_community.llms.tongyi import Tongyi
 
 model = Tongyi(
-    model_name='qwen-max', dashscope_api_key='sk-a70f6e7008314650acf4388068e04490', model_kwargs={'temperature': 0.8}
+    model_name='qwen-max', dashscope_api_key='', model_kwargs={'temperature': 0.8}
 )
 
 

@@ -11,7 +11,7 @@ from langchain_core.output_parsers import StrOutputParser
 model = Tongyi(
     model_name='qwen-max',
     model_kwargs={'temperature': 0.01},
-    dashscope_api_key='sk-a70f6e7008314650acf4388068e04490'
+    dashscope_api_key=''
 )
 
 

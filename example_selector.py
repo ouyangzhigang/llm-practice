@@ -10,7 +10,7 @@ with open('example.json', 'r', encoding='utf-8') as file:
     examples = json.load(file)
 
 embeddings = DashScopeEmbeddings(
-    model="text-embedding-v1", dashscope_api_key='sk-a70f6e7008314650acf4388068e04490')
+    model="text-embedding-v1", dashscope_api_key='')
 
 # print(examples)
 example_selector = SemanticSimilarityExampleSelector.from_examples(

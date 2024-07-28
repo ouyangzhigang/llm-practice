@@ -1,6 +1,6 @@
 from serpapi import Client
 
-api_key = "8dfb689ad45d726b6b5769baadb450b0ba2b8dbb07f90f8699982382490ae2e7"
+api_key = ""
 
 # 定义搜索参数
 search_params = {

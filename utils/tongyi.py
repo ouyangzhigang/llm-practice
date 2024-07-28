@@ -2,7 +2,7 @@ import os
 from langchain_community.llms.tongyi import Tongyi
 from langchain_community.chat_models.tongyi import ChatTongyi
 
-os.environ['TONGYI_KEY'] = 'sk-a70f6e7008314650acf4388068e04490'
+os.environ['TONGYI_KEY'] = ''
 print(os.environ.get('TONGYI_KEY'))
 
 tongyi_model = Tongyi(

@@ -24,6 +24,6 @@ all_examples_prompt = FewShotPromptTemplate(
 question = "网络安全"
 prompt = all_examples_prompt.format(input=question)
 
-model = Tongyi(model_name='qwen-max', dashscope_api_key='sk-a70f6e7008314650acf4388068e04490', stream=True)
+model = Tongyi(model_name='qwen-max', dashscope_api_key='', stream=True)
 for message in model.stream(prompt):
     print(message, end='', flush=True)

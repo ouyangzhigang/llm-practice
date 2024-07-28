@@ -5,7 +5,7 @@ from langchain.prompts import PromptTemplate
 # from langchain_core.prompts import PromptTemplate
 from langchain.chains import APIChain
 
-os.environ['TONGYI_KEY'] = 'sk-a70f6e7008314650acf4388068e04490'
+os.environ['TONGYI_KEY'] = ''
 print(os.environ.get('TONGYI_KEY'))
 
 llm = Tongyi(
