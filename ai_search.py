@@ -9,8 +9,8 @@ from langchain_community.llms.tongyi import Tongyi
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 
-os.environ['SERPAPI_KEY'] = '8dfb689ad45d726b6b5769baadb450b0ba2b8dbb07f90f8699982382490ae2e7'
-os.environ['TONGYI_KEY'] = 'sk-a70f6e7008314650acf4388068e04490'
+os.environ['SERPAPI_KEY'] = 'xxx'
+os.environ['TONGYI_KEY'] = 'sk-'
 print(os.environ.get('SERPAPI_KEY'))
 
 
