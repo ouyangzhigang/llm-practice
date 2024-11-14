@@ -63,7 +63,7 @@ def get_search_result(query: str) -> SearchResults:
 model = Tongyi(
     model_name='qwen-max',
     model_kwargs={'temperature': 0.05},
-    dashscope_api_key='sk-a70f6e7008314650acf4388068e04490')
+    dashscope_api_key='sk-')
 
 # def chat(query: str) -> str:
 #     response = client.chat.completions.create(
